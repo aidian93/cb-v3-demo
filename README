@@ -1,0 +1,80 @@
+# Chaturbate V3 Demo
+
+## Project Overview
+This project is aimed at improving the tools available for streamers on Chaturbate. It includes customizable apps such as:
+
+- Tip Menus
+- Lovense Integration
+- Tip Goals
+- Ticket Shows
+
+As well as the following features:
+
+- Live Tools
+- Timer
+- Stream Start
+- Stream Themes
+- Member Groups
+- Blocked Words
+
+The project focuses on ease of use and high customization, providing a better and more interactive experience for both streamers and their audience. This app also aims to increase the level of complexity that can be programmed into apps providing for more robust user experiences.
+
+## Technologies Used
+- **Python**: Core logic and app functionality.
+- **SQL Server**: Database management for app settings and user data.
+- **MQTT**: Real-time communication between the python apps and devices (future expandable to include real world objects like fucking machines, room lights, etc.).
+- **Ignition**: User interface and control visualization.
+
+## Demo
+Visit the [GitHub Pages Demo](https://aidian93.github.io/cb-v3-demo/) to see the project in action, including video demonstrations.
+
+## Features
+- Tip Menu:
+  + Ability to create multiple custom tip menus that can be changed in real time with the click of a button
+  + Customizable response messages (i.e. tipping for "Nice Smile" can respond in the chat saying "[user] thinks my smile is nice")
+  + Customizable theme for notices
+
+- Lovense Integration:
+  + Ability to create multiple lovense menus that can be changed in real time with the click of a button
+  + Room owner can tie menu items to specific toys or a group of toys
+  + Menu items can be single value, ranged, or greater than for triggering
+  + Customizable response messages (i.e. tipping for "Earthquake" vibration can respond in the chat saying "[user] is rocking my world!")
+  + Toy tester page to test connectivity as well as vibration intensity allowing for more personal lovense menus
+  + Customizable theme for notices
+
+- Tip Goals:
+  + Ability to create multiple menus so room owners can choose from their premade tip goal flows
+  + Repeat goals allows for automatic restart of tip goals whether you use 1 tip goal or multiple (can be turned on/off)
+  + Carryover tips allows for tips from one goal to carry over to the next (i.e. tipping 50 with this on when Goal 1 was 20 will achieve Goal 1 and carry the 30 remaining into Goal 2) (can be turned on/off)
+  + Autostart goals automatically starts the next goal on the list, or automatically restarts if repeat goals is on, giving the room owner the ability to get prepared before going to the next goal (can be turned on/off)
+
+- Ticket Shows:
+  + Allows quick start/stop of ticket shows
+  + Auto increase menu to allow for automatic ticket price increases based on tickets sold, time, ticket show start, or a mix of the three
+  + Room owner can kick or add users to the show easily
+
+- Live Tools:
+  + Page to show chat messages, tips, tip fors, user enter/exit, followers individually making keeping up with chat easier
+  + Ability to send live on-the-fly chat notices
+
+- Timer:
+  + Tool for displaying a timer on screen in OBS
+  + Automatically inherits time and message from tip menu items that have a time assigned to them
+  + Can be used to manually start a timer
+
+- Stream Start:
+  + Auto-start feature that will start your stream using OBS with 1 click
+
+- Stream Themes:
+  + Full customization of room broadcast panel including ability to use any combination of rows/columns as well as creating multiple panels for rotating information
+  + Custom subject line
+  + Custom notices (user, chat, and room owner)
+  + Customization includes font weight, font color
+  + Broadcast panel(s) and subject line allow parameters which can show current tip amount, tip goal, total tips, tip goal remaining etc.
+
+- Member Groups:
+  + Gives room owners the ability to give users special priviledges like extra vibration time/intensity as well as special icons in chat
+  + Can be expanded for future goodies such as monthly free ticket to ticket shows, member group only streams, etc.
+
+- Blocked Words:
+  + A set list of words that room owners would like blocked to control negativity in their chat
